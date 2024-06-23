@@ -1,0 +1,385 @@
+* {
+	padding:0;
+	margin:0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos {
+	padding:5px 0;
+	background-color: #df42c0;
+}
+.medsos ul li {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #df42c0;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #df42c0;
+	color: #fff;
+}
+.active {
+	background-color: #df42c0;
+	color: #fff;
+}
+.banner {
+	height: 60vh;
+	background-image: url('banner.jpeg');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #de62ce99;
+}
+.banner h2 {
+	color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border:3px solid #fff;
+}
+section {
+	padding:50px 0;
+}
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color: #df42c0;
+	margin-bottom: 25px;
+}
+
+.product, .more-details{
+	padding-bottom: 100px;
+}
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.book-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.book-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-item h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+.price {
+    color: #cc0e1e;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+button {
+    background: #ec3c57;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #22061c;
+}
+
+.more-details {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.back-button {
+	display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.about p {
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.product {
+	background-color: #f9f9f9;
+}
+
+.box {
+	color: #df42c0;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .col-4 {
+	width:25%;
+	padding:20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+
+.Kategori .box {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Optional: Add some gap between columns */
+}
+
+.Kategori .col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+	width:70px;
+	height:70px;
+	border:1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	margin:0 auto;
+}
+.box .col-4 h4 {
+	margin:20px 0;
+}
+footer {
+	padding:30px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+.bg-loader {
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader {
+	width:100px;
+	height: 100px;
+	border:3px solid #fff;
+	border-radius: 50%;
+	border-top-color: #df42c0;
+	border-right-color: #df42c0;
+	border-bottom-color: #df42c0;
+	animation: puterin .8s linear infinite;
+}
+.label {
+	background-color: #df42c0;
+	color: #fff;
+}
+
+.contact-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; /* Adjust the width as needed */
+    width: 100%;
+    padding: 40px; /* Optional: Add some padding */
+}
+
+.contact-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-box {
+    display: flex;
+	justify-content: center;
+	align-items: center	;
+    width: 100%;
+}
+
+.contact-left {
+    padding: 40px;
+    background-color: #ecdcf0;
+    flex: 1;
+}
+
+.contact-left h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #df42c0;
+}
+
+.contact-left .input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-left .input-box i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #888;
+}
+
+.contact-left .input-box input,
+.contact-left .input-box textarea {
+    width: calc(100% - 20px);
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-left .input-box textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-left .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #df42c0;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-left .submit-btn:hover {
+    background-color: #df42c0;
+}
+
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #ee4633;
+    color: white;
+    padding: 10px 30px;
+	margin-bottom: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ee4633;
+}
+
+#book-details h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+#book-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 768px){
+	.container {
+		width:90%;
+	}
+	header h1 {
+		text-align: center;
+		float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width:100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+}
